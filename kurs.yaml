@@ -1,0 +1,81 @@
+# Kursbeschreibung – Lernpfad Textverarbeitung (FSP)
+# Aufbau und alle Felder: referenzen/schema.md im Lernpfad-Baukasten
+
+titel: Textverarbeitung für Haus- und Methodikarbeit
+kurzname: textverarbeitung-fsp
+ueberschrift: Deine Hausarbeit in Form – Schritt für Schritt
+untertitel: >-
+  Du lernst, eine schriftliche Arbeit so einzurichten, wie es die Richtlinien der Fachschule für Sozialpädagogik
+  verlangen – vom Seitenrand bis zum Literaturverzeichnis. Am Ende baut ihr in der Gruppe eine abgabefertige Mini-Hausarbeit.
+badges: [Word, OnlyOffice, LibreOffice, 5 Stufen · ca. 12 Unterrichtsstunden]
+fusszeile: BBZ Rendsburg-Eckernförde · Fachschule für Sozialpädagogik · Grundlage – Richtlinien für schriftliche Ausarbeitungen, Stand 21.11.2025
+logo_zeichen: "¶"
+anrede: du
+notizfrage: "Was nimmst du aus diesem Modul mit? Was war knifflig? Was willst du dir für die Hausarbeit merken?"
+
+einleitung: |
+  :::notiz 👉 Bevor du startest
+  1. Stell oben ein, womit du arbeitest: **Word / OnlyOffice** oder **LibreOffice**. Du kannst jederzeit umschalten.
+  2. Lade dir den [Basistext „Medien in der Kita“](material/basistext-medien-in-der-kita.docx) herunter – an ihm übst du in den Stufen 1 bis 4.
+  3. Arbeite die Module der Reihe nach durch. Am Ende jedes Moduls hakst du deine Checkliste ab und prüfst dich mit dem Kurz-Check.
+  4. Die 🛠️-Werkzeuge geben dir sofort Rückmeldung – zum Beispiel prüft der **Dokument-Prüfer** deine Word-Datei direkt im Browser.
+  :::
+
+  :::achtung Darum geht es wirklich
+  Die Richtlinien sind streng: Formfehler kosten bis zu drei Notenpunkte, und **nicht gekennzeichnete Zitate führen zur Note 6** – bei der Hausarbeit bedeutet das die Wiederholung des Schuljahres. Die gute Nachricht: Mit den Handgriffen aus diesem Lernpfad passiert dir das nicht.
+  :::
+
+varianten:
+  frage: "Ich arbeite mit:"
+  optionen: {word: Word / OnlyOffice, libre: LibreOffice}
+  beide: true
+
+menueband:
+  word: [Datei, Start, Einfügen, Entwurf, Layout, Referenzen, Sendungen, Überprüfen, Ansicht]
+
+stufen:
+  - id: einrichten
+    name: Einrichten
+    icon: "🌱"
+    text: Formatierungszeichen, Dateiname, Seitenränder, Schrift, Zeilenabstand – und Überschriften, die das Programm versteht.
+    module: [g1, g2, g3]
+  - id: strukturieren
+    name: Strukturieren
+    icon: "🚀"
+    text: Seitenzahlen ab der ersten Textseite, Deckblatt mit allen Pflichtangaben, automatisches Inhaltsverzeichnis.
+    module: [s1, s2]
+  - id: recherchieren
+    name: Recherchieren
+    icon: "🔎"
+    text: Gute Quellen finden, Seriosität prüfen und alle Angaben für die Quellenangabe zusammentragen – gut auch im Plenum.
+    module: [r1, r2]
+  - id: belegen
+    name: Belegen & Abschließen
+    icon: "📚"
+    text: Zitieren nach APA, Literaturverzeichnis, Abbildungen und Tabellen, Schlussteile und PDF.
+    module: [b1, b2, b3, b4]
+  - id: gruppenprojekt
+    name: Gruppenprojekt
+    icon: "🏆"
+    text: In der Gruppe baut ihr eine abgabefertige Mini-Hausarbeit – eine Person gibt für alle ab.
+    module: [gm]
+
+selbstcheck:
+  fragen:
+    - frage: Hast du schon einmal Überschriften über Formatvorlagen („Überschrift 1“) vergeben?
+      antworten: [Nein / weiß nicht, Mit Anleitung, Ja – kann ich allein]
+    - frage: Kannst du Seitenzahlen so einrichten, dass die „1“ erst auf der ersten Textseite steht?
+      antworten: [Nein, Mit Anleitung, Ja – kann ich allein]
+    - frage: Hast du schon ein automatisches Inhaltsverzeichnis eingefügt und aktualisiert?
+      antworten: [Nein, Mit Anleitung, Ja – kann ich allein]
+    - frage: Kennst du den APA-Kurzbeleg (Name, Jahr, S. X) und weißt, warum „vgl.“ nicht mehr vorkommt?
+      antworten: [Nein, Ungefähr, Ja]
+  empfehlung:
+    - {bis: 3, stufe: einrichten, hinweis: "Starte ganz vorne mit G1 – die Grundlagen sparen dir später viel Ärger."}
+    - {bis: 6, stufe: einrichten, hinweis: "Du hast schon Vorwissen. Arbeite Stufe 1 zügig durch und prüf dich mit dem Dokument-Prüfer – wenn alles grün ist, geht’s weiter."}
+    - {stufe: strukturieren, hinweis: "Du kannst schon viel. Richte deinen Basistext kurz nach G2/G3 ein, prüf ihn mit dem Dokument-Prüfer in G3 und steig dann bei S1 ein."}
+
+moodle:
+  version: 5
+  freischaltung: offen
+  reihenfolge: nacheinander

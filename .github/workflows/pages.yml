@@ -1,0 +1,53 @@
+# Baut die Web-Version mit dem Lernpfad-Baukasten und veröffentlicht sie auf GitHub Pages.
+# Zusätzlich entsteht ein ZIP („webversion-plesk“) zum Hochladen auf den eigenen Webserver.
+# Lehrkräfte-Seite und Musterlösung werden für die öffentliche Version entfernt.
+name: Web-Version veröffentlichen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  bauen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: dclausen01/Lernpfad-baukasten
+          ref: ${{ vars.BAUKASTEN_REF || 'main' }}
+          path: _baukasten
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml markdown-it-py mdit-py-plugins
+      - run: python _baukasten/skripte/bauen.py .
+      - name: Unterlagen für Lehrkräfte entfernen
+        run: rm -f ausgabe/web/lehrkraefte.html ausgabe/web/material/musterloesung-basistext.docx
+      - uses: actions/upload-artifact@v4
+        with:
+          name: webversion-plesk
+          path: ausgabe/web
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ausgabe/web
+
+  veroeffentlichen:
+    needs: bauen
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

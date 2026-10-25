@@ -1,0 +1,118 @@
+# Quellen mit Prüfstatus – siehe referenzen/qualitaet.md im Lernpfad-Baukasten
+# status: verifiziert = gegen die Quelle geprüft · zu_pruefen = bitte von der Lehrkraft kurz im Programm anklicken
+
+- id: q-richtlinien
+  titel: Richtlinien für schriftliche Ausarbeitungen an der Fachschule für Sozialpädagogik in Rendsburg (mit APA), Stand 21.11.2025
+  url: ""
+  art: lehrplan
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: >-
+    Formatvorgaben (DIN A4, Ränder 2,5/3/2,5/2,5, Arial 12, Überschriften 14 pt fett, Zeilenabstand 1,5, Fußnoten 9 pt 1-zeilig,
+    Blocksatz + Silbentrennung, Seitenzahl 1 auf der ersten Fließtextseite), Aufbau, Deckblatt-Angaben, numerische Gliederung,
+    Literaturverzeichnis (Muster 6.1–6.4, alphabetisch, hängender Einzug), Seriöse Quellen (7 Fragen, 6.5), Zitierregeln (7.1–7.6),
+    Abbildungen (8), KI-Nutzung (10), Sanktionen (S. 1–2), Anhang I–VI.
+
+- id: q-unterrichtsmaterial
+  titel: Arbeitsblätter 0–8, Spickzettel, Bewertungskriterien Probearbeit (eigenes Unterrichtsmaterial der Lehrkraft, Word- und LibreOffice-Fassung)
+  url: ""
+  art: eigene
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Didaktische Abfolge, Basistext „Medien in der Kita“, Übungsaufgaben, 20-Punkte-Bewertungsbogen, Menüpfade der Arbeitsblätter.
+
+- id: q-ms-tasten
+  titel: Microsoft Support – Tastenkombinationen in Word
+  url: https://support.microsoft.com/de-de/office/tastenkombinationen-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: >-
+    Strg+Alt+1/2/3 (Überschrift 1–3), Strg+Umschalt+N (Standard), Strg+Alt+F (Fußnote), Strg+Eingabetaste (Seitenumbruch),
+    F9 (Felder aktualisieren), Strg+Leertaste / Strg+Q (Zeichen-/Absatzformatierung entfernen), Strg+H (Ersetzen).
+    ACHTUNG: Die Seite nennt Kürzel für das US-Layout (z. B. Fett = Strg+B). Im deutschen Word ist Strg+B Blocksatz –
+    der Lernpfad nennt deshalb für Fett/Kursiv/Blocksatz die Knöpfe, keine Kürzel.
+
+- id: q-ms-beschriftung
+  titel: Microsoft Support – Einfügen, Hinzufügen oder Entfernen von Beschriftungen in Word
+  url: https://support.microsoft.com/de-de/office/einf%C3%BCgen-hinzuf%C3%BCgen-oder-entfernen-von-beschriftungen-in-word-82fa82a4-f0f3-438f-a422-34bb5cef9c81
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Beschriftung einfügen auf der Registerkarte „Verweise“ (in Microsoft 365 heißt sie „Referenzen“), Felder mit F9 aktualisieren.
+
+- id: q-word-menues
+  titel: Word (Microsoft 365) – Menüpfade Layout › Seitenränder, Layout › Silbentrennung, Layout › Umbrüche › Nächste Seite, Kopf- und Fußzeile › Mit vorheriger verknüpfen, Seitenzahl › Seitenzahlen formatieren › Beginnen bei, Referenzen › Inhaltsverzeichnis
+  url: https://support.microsoft.com/de-de/word
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: >-
+    Menüpfade stimmen mit den erprobten Arbeitsblättern der Lehrkraft überein; Registerkarte „Referenzen“ (Microsoft 365) bzw.
+    „Verweise“ (ältere Versionen, manche Hilfeseiten). Der Lernpfad nennt beide Namen.
+
+- id: q-lo-tasten
+  titel: LibreOffice-Hilfe – Tastenkombinationen für LibreOffice Writer
+  url: https://help.libreoffice.org/latest/de/text/swriter/04/01020000.html
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Strg+1/2/3 (Überschrift 1–3), Strg+0 (Fließtext), Strg+F10 (Steuerzeichen), Strg+Eingabetaste (Seitenumbruch), F5 (Navigator), F11 (Formatvorlagen), F9 (Felder aktualisieren).
+
+- id: q-lo-kapitelnummerierung
+  titel: LibreOffice-Hilfe – Kapitelnummerierung
+  url: https://help.libreoffice.org/latest/de/text/swriter/guide/chapter_numbering.html
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Extras – Kapitelnummerierung… – Register Nummerierung, Ebene, Absatzvorlage, Nummer.
+
+- id: q-lo-verzeichnis
+  titel: LibreOffice-Hilfe – Inhaltsverzeichnisse erstellen
+  url: https://help.libreoffice.org/latest/de/text/swriter/guide/indices_toc.html
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Einfügen – Verzeichnis – Verzeichnis… (Typ Inhaltsverzeichnis); Rechtsklick › Verzeichnis aktualisieren; Extras – Aktualisieren – Verzeichnisse.
+
+- id: q-lo-seitennummern
+  titel: LibreOffice-Hilfe – Seitennummern
+  url: https://help.libreoffice.org/latest/de/text/swriter/guide/pagenumbers.html
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Einfügen – Kopf-/Fußzeile – Fußzeile – [Seitenvorlage]; Einfügen – Feldbefehl – Seitennummer; Neustart über Format – Absatz… – Textfluss – Umbrüche (Einfügen, Mit Seitenvorlage, Seitennummer).
+
+- id: q-lo-silbentrennung
+  titel: LibreOffice-Hilfe – Silbentrennung verwenden
+  url: https://help.libreoffice.org/latest/de/text/swriter/guide/using_hyphen.html
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Absatzvorlage ändern › Register Textfluss › Silbentrennung › Automatisch.
+
+- id: q-lo-beschriftung
+  titel: LibreOffice-Hilfe – Beschriftungen verwenden
+  url: https://help.libreoffice.org/latest/de/text/swriter/guide/captions.html
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Einfügen – Beschriftung…; Nummern mit F9 aktualisieren.
+
+- id: q-oo-seitenzahlen
+  titel: ONLYOFFICE Help Center – Insert page numbers / headers and footers
+  url: https://helpcenter.onlyoffice.com/docs/userguides/document_editor/InsertPageNumbers.aspx
+  art: hersteller
+  status: zu_pruefen
+  geprueft_am: 2026-10-25
+  belegt: >-
+    Einfügen › Seitenzahl, Einstellung „Seitennummerierung“ mit „Beginnen bei“, „Mit vorheriger verknüpfen“ auf der Registerkarte
+    Kopf- und Fußzeile. Die Hilfe ist englisch – die deutschen Beschriftungen bitte einmal in OnlyOffice nachsehen.
+
+- id: q-lo-fussnoten
+  titel: LibreOffice-Hilfe – Fußnoten und Endnoten einfügen / AutoKorrektur Lokalisierte Optionen
+  url: https://help.libreoffice.org/latest/de/text/swriter/guide/footnote_usage.html
+  art: hersteller
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: Einfügen – Fuß-/Endnote – Fuß-/Endnote…; Extras – AutoKorrektur – AutoKorrektur-Optionen › Lokalisierte Optionen (Anführungszeichen ersetzen).
