@@ -18,6 +18,7 @@ abgabe:
   dateitypen: .docx,.pdf
   dateien: 2
   option: "Gruppenabgabe"
+  link: https://cloud.bbz-rd-eck.de/apps/forms/s/QbewgnrzDqRTMnwPDC9RDHYp
 raster:
   - {bereich: "Dokumenteinrichtung & Grundformatierung", kriterium: "Seitenränder (oben/unten/links 2,5 cm, rechts 3 cm), Arial 12 pt, Zeilenabstand 1,5, Blocksatz mit Silbentrennung", punkte: 2}
   - {bereich: "", kriterium: "Deckblatt mit allen Pflichtangaben (Schule mit Adresse, Art und Thema der Arbeit, alle Namen, Klasse, Lehrkraft, Ort/Datum) und sauberer Gestaltung", punkte: 2}

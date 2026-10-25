@@ -41,3 +41,12 @@ python3 baukasten/skripte/bauen.py .          # Web-Version → ausgabe/web/
 
 Die Web-Version hat keine eigene Abgabe. Die Links zu den Nextcloud-Formularen kommen in die Modulköpfe:
 `module/s2.md` (Zwischenabgabe, einzeln) und `module/gm.md` (Gruppenabgabe), jeweils `abgabe: › link: https://…`.
+
+| Abgabe | Modul | Nextcloud-Formular |
+| --- | --- | --- |
+| Zwischenabgabe Übungsdokument (.docx, 10 Punkte) | `s2` | https://cloud.bbz-rd-eck.de/apps/forms/s/HwdxsScnKFBt5fBzq7NQCkeN |
+| Gruppenabgabe Mini-Hausarbeit (.docx + PDF, 20 Punkte) | `gm` | https://cloud.bbz-rd-eck.de/apps/forms/s/QbewgnrzDqRTMnwPDC9RDHYp |
+
+Beide Formulare fragen **Name** und **Klasse** als Textfeld ab (die Gruppenabgabe alle Namen der Gruppe) und
+nehmen die Dateien per Upload an. Der Link steht im Modulkopf, daraus baut `bauen.py` den Knopf
+„Zum Abgabeformular ↗“; ohne Link erscheint stattdessen der Hinweis, dass die Lehrkraft den Link aushändigt.
