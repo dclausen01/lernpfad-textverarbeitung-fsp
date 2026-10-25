@@ -34,6 +34,8 @@ python3 <baukasten>/skripte/durchklicken.py .   # Browser-Test → ausgabe/pruef
 - **GitHub Pages:** Bei jedem Push auf `main` baut die Action `.github/workflows/pages.yml` die Web-Version und veröffentlicht
   sie (einmalig: *Settings › Pages › Source: GitHub Actions*). Lehrkräfte-Seite und Musterlösung werden dabei entfernt.
   Welcher Stand des Baukastens genommen wird, steuert die Repository-Variable `BAUKASTEN_REF` (Standard: `main`).
+  Ist der Baukasten privat, braucht die Action ein Secret `BAUKASTEN_TOKEN` (Fine-grained Token, nur Lernpfad-baukasten,
+  „Contents: Read-only“) unter *Settings › Secrets and variables › Actions*.
 - **Plesk / eigener Webserver:** Den Inhalt von `ausgabe/web/` per FTP oder Dateimanager in einen Ordner hochladen – fertig.
   Alternativ das ZIP `webversion-plesk` aus dem letzten Lauf der Action herunterladen.
 

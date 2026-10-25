@@ -26,6 +26,9 @@ jobs:
         with:
           repository: dclausen01/Lernpfad-baukasten
           ref: ${{ vars.BAUKASTEN_REF || 'main' }}
+          # Öffentlicher Baukasten: kein Schlüssel nötig. Privater Baukasten: Secret BAUKASTEN_TOKEN anlegen
+          # (Fine-grained Token, nur Repository Lernpfad-baukasten, Berechtigung „Contents: Read-only“).
+          token: ${{ secrets.BAUKASTEN_TOKEN || github.token }}
           path: _baukasten
       - uses: actions/setup-python@v5
         with:

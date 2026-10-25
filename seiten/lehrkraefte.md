@@ -72,4 +72,4 @@ Alle Werkzeuge laufen nur im Browser. Es wird nichts hochgeladen, gespeichert wi
 ## Hinweise zu den Richtlinien
 
 - **Gendern:** Der Lernpfad nutzt der Kürze halber den Doppelpunkt (Schüler:innen). Für die Arbeiten der Schüler:innen ist er laut Richtlinien 3.3 nicht zulässig – darauf weist die Checklisten-Seite hin.
-- **Eigenständigkeitserklärung (Anhang I):** Der letzte Satz lautet im Original „… dass es sich bei einem Plagiat und eine Täuschung handelt …“. Der Lernpfad übernimmt ihn wörtlich. Bei Gelegenheit in den Richtlinien korrigieren?
+- **Eigenständigkeitserklärung (Anhang I):** Im Original steht im letzten Satz „… bei einem Plagiat und eine Täuschung …“. Der Lernpfad nutzt die korrigierte Fassung „… bei einem Plagiat um eine Täuschung …“.
