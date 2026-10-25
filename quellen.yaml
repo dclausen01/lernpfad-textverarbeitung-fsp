@@ -116,3 +116,16 @@
   status: verifiziert
   geprueft_am: 2026-10-25
   belegt: Einfügen – Fuß-/Endnote – Fuß-/Endnote…; Extras – AutoKorrektur – AutoKorrektur-Optionen › Lokalisierte Optionen (Anführungszeichen ersetzen).
+
+- id: q-screenshots
+  titel: Screenshots LibreOffice Writer 24.2 (deutsche Oberfläche) – eigene Aufnahmen
+  url: https://www.libreoffice.org/
+  art: eigene
+  lizenz: "Eigene Screenshots; LibreOffice steht unter der Mozilla Public License 2.0. Dokumentinhalte selbst erstellt."
+  status: verifiziert
+  geprueft_am: 2026-10-25
+  belegt: >-
+    material/screens/lo-*.png. Dabei bestätigt: Extras › Kapitelnummerierung…, Extras › Rechtschreibung… (F7),
+    Extras › Aktualisieren › Alles / Verzeichnisse, Format › Direkte Formatierung löschen (Strg+M), Format › Seitenvorlage…,
+    Format › Absatz… › Textfluss (Umbrüche: Einfügen, Mit Seitenvorlage, Seitennummer). Word/OnlyOffice: schematische
+    Menüband-Grafiken statt Screenshots (keine frei lizenzierten Word-Screenshots verfügbar).

@@ -1,7 +1,7 @@
 ---
 titel: "Gruppenprojekt: eure Mini-Hausarbeit"
 minuten: 90
-review: geprueft
+review: freigegeben
 meilenstein: true
 lernziele:
   - alle Handgriffe des Lernpfads in einem neuen Dokument selbstständig anwenden,

@@ -34,6 +34,12 @@ def schrift(stil, groesse, fett=False):
 
 normal = st["Normal"]
 schrift(normal, 12)
+# Dokumentsprache Deutsch (wichtig für Silbentrennung und Rechtschreibprüfung)
+for el in (st.element.find(qn("w:docDefaults")).find(qn("w:rPrDefault")).find(qn("w:rPr")), normal.element.get_or_add_rPr()):
+    lang = el.find(qn("w:lang"))
+    if lang is None:
+        lang = OxmlElement("w:lang"); el.append(lang)
+    lang.set(qn("w:val"), "de-DE")
 normal.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 normal.paragraph_format.line_spacing = 1.5
 normal.paragraph_format.space_after = Pt(6)

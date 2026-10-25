@@ -53,7 +53,7 @@ Stell oben ein, womit du arbeitest – dann zeigt der Spickzettel nur dein Progr
 | Beschriftung | {{Einfügen › Beschriftung…}} |
 | Querverweis | {{Einfügen › Querverweis…}} |
 | Hängender Einzug | {{Format › Absatz…}} › Vor Text 1,25 cm, Erste Zeile −1,25 cm |
-| Alles aktualisieren | {{Extras › Aktualisieren › Alles aktualisieren}} |
+| Alles aktualisieren | {{Extras › Aktualisieren › Alles}} |
 | Als .docx speichern | {{Datei › Speichern unter…}} › Dateityp Word 2007–365 |
 | PDF | {{Datei › Exportieren als › Als PDF exportieren…}} |
 :::
