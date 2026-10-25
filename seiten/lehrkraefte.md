@@ -27,6 +27,8 @@ Summe der Module: 500 von 540 Minuten – 40 Minuten Puffer, vor allem in den St
 
 ## Recherche-Stufe im Plenum
 
+- **BBZ-Bibliothek:** Der Katalog ist auf der Startseite, in R1 und R2 verlinkt (https://bbzrdeck.librishare.de/). Das Login-Passwort steht bewusst nirgends im Lernpfad – bitte in der Stunde ausgeben.
+
 - **R1, Einstieg (10 min):** Frage an die Klasse: „Wo würdet ihr für die Hausarbeit suchen?“ Antworten sammeln, dann die Tabelle „Wo suchen?“ gemeinsam durchgehen. Gespräch über KI: Wer hat schon Literaturtipps von einer KI bekommen – und hat sie überprüft?
 - **R1, Kleingruppen (20 min):** Thema Eingewöhnung. Jede Gruppe prüft eine Katalog- oder Fachportal-Quelle und eine Suchmaschinen-Quelle mit dem Quellen-Check. Danach Kurzvorstellung (2 Sätze je Gruppe).
 - **R2:** Die Liste „Quellenangaben üben“ (20 Werke) aufteilen, drei Nummern je Gruppe. Mit echten Büchern aus der Bibliothek ist das deutlich anschaulicher. Ergebnisse in B2 (Plus-Aufgabe) zu Literaturangaben machen.

@@ -1,4 +1,13 @@
 # Links auf offizielle Stellen – Module verweisen per ID darauf (Kasten „Videos & Hilfe“)
+bbz-bibliothek:
+  type: hilfe
+  lang: de
+  source: BBZ Rendsburg-Eckernförde
+  title: "BBZ-Bibliothek: Online-Katalog unserer Schulbibliothek"
+  url: https://bbzrdeck.librishare.de/
+  hint: Das Passwort zum Login bekommst du von deiner Lehrkraft.
+  linkGeprueft: 2026-10-25
+
 fachportal:
   type: hilfe
   lang: de
