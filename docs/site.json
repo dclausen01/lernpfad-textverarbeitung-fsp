@@ -1,0 +1,120 @@
+{
+ "titel": "Textverarbeitung für Haus- und Methodikarbeit",
+ "kurzname": "textverarbeitung-fsp",
+ "seiten": [
+  {
+   "datei": "g1-ankommen-und-grundhandwerk.html",
+   "art": "modul",
+   "id": "g1",
+   "titel": "Ankommen und Grundhandwerk",
+   "review": "geprueft"
+  },
+  {
+   "datei": "g2-dokument-einrichten.html",
+   "art": "modul",
+   "id": "g2",
+   "titel": "Dokument einrichten",
+   "review": "geprueft"
+  },
+  {
+   "datei": "g3-uberschriften-und-gliederung.html",
+   "art": "modul",
+   "id": "g3",
+   "titel": "Überschriften und Gliederung",
+   "review": "geprueft"
+  },
+  {
+   "datei": "s1-abschnitte-und-seitenzahlen.html",
+   "art": "modul",
+   "id": "s1",
+   "titel": "Abschnitte und Seitenzahlen",
+   "review": "freigegeben"
+  },
+  {
+   "datei": "s2-deckblatt-und-inhaltsverzeichnis.html",
+   "art": "modul",
+   "id": "s2",
+   "titel": "Deckblatt und Inhaltsverzeichnis",
+   "review": "geprueft"
+  },
+  {
+   "datei": "r1-gute-quellen-finden.html",
+   "art": "modul",
+   "id": "r1",
+   "titel": "Gute Quellen finden",
+   "review": "geprueft"
+  },
+  {
+   "datei": "r2-angaben-fur-die-quelle-finden.html",
+   "art": "modul",
+   "id": "r2",
+   "titel": "Angaben für die Quelle finden",
+   "review": "geprueft"
+  },
+  {
+   "datei": "b1-zitieren-nach-apa.html",
+   "art": "modul",
+   "id": "b1",
+   "titel": "Zitieren nach APA",
+   "review": "geprueft"
+  },
+  {
+   "datei": "b2-das-literaturverzeichnis.html",
+   "art": "modul",
+   "id": "b2",
+   "titel": "Das Literaturverzeichnis",
+   "review": "freigegeben"
+  },
+  {
+   "datei": "b3-abbildungen-und-tabellen.html",
+   "art": "modul",
+   "id": "b3",
+   "titel": "Abbildungen und Tabellen",
+   "review": "geprueft"
+  },
+  {
+   "datei": "b4-schlussteile-endkontrolle-und-pdf.html",
+   "art": "modul",
+   "id": "b4",
+   "titel": "Schlussteile, Endkontrolle und PDF",
+   "review": "geprueft"
+  },
+  {
+   "datei": "gm-gruppenprojekt-eure-mini-hausarbeit.html",
+   "art": "modul",
+   "id": "gm",
+   "titel": "Gruppenprojekt: eure Mini-Hausarbeit",
+   "review": "geprueft"
+  },
+  {
+   "datei": "spickzettel.html",
+   "art": "seite",
+   "titel": "Spickzettel: die wichtigsten Handgriffe"
+  },
+  {
+   "datei": "richtlinien.html",
+   "art": "seite",
+   "titel": "Checkliste: Richtlinien vor der Abgabe"
+  },
+  {
+   "datei": "lehrkraefte.html",
+   "art": "lehrkraft",
+   "titel": "Für Lehrkräfte"
+  },
+  {
+   "datei": "videos.html",
+   "art": "seite",
+   "titel": "Videos & Hilfeseiten"
+  },
+  {
+   "datei": "index.html",
+   "art": "index",
+   "titel": "Übersicht"
+  },
+  {
+   "datei": "start.html",
+   "art": "start",
+   "titel": "🧭 Mein Lernpfad – hier geht's los"
+  }
+ ]
+}

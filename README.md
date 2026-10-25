@@ -20,24 +20,27 @@ Dateinamen-Prüfer, Gliederungs-Prüfer, Quellen-Check, Angaben-Detektiv, Zitat-
 | `material/` | Basistext, Rohtext fürs Gruppenprojekt, Musterlösung |
 | `lehrkraft/` | Skripte, die Rohtext und Musterlösung erzeugen |
 | `quellen.yaml`, `medien.yaml` | geprüfte Quellen und Links |
-| `ausgabe/` | wird erzeugt – nicht von Hand ändern |
-
-## Bauen
-
-```bash
-python3 <baukasten>/skripte/bauen.py .          # Web-Version → ausgabe/web/
-python3 <baukasten>/skripte/durchklicken.py .   # Browser-Test → ausgabe/pruefung/uebersicht.html
-```
+| `docs/` | veröffentlichte Web-Version (erzeugt – nicht von Hand ändern) |
+| `ausgabe/` | Arbeitsordner beim Bauen (nicht im Repository) |
 
 ## Veröffentlichen
 
-- **GitHub Pages:** Bei jedem Push auf `main` baut die Action `.github/workflows/pages.yml` die Web-Version und veröffentlicht
-  sie (einmalig: *Settings › Pages › Source: GitHub Actions*). Lehrkräfte-Seite und Musterlösung werden dabei entfernt.
-  Welcher Stand des Baukastens genommen wird, steuert die Repository-Variable `BAUKASTEN_REF` (Standard: `main`).
-  Ist der Baukasten privat, braucht die Action ein Secret `BAUKASTEN_TOKEN` (Fine-grained Token, nur Lernpfad-baukasten,
-  „Contents: Read-only“) unter *Settings › Secrets and variables › Actions*.
-- **Plesk / eigener Webserver:** Den Inhalt von `ausgabe/web/` per FTP oder Dateimanager in einen Ordner hochladen – fertig.
-  Alternativ das ZIP `webversion-plesk` aus dem letzten Lauf der Action herunterladen.
+Die fertige Web-Version liegt in **`docs/`** – das Repository braucht zum Ansehen und Veröffentlichen nichts weiter.
+
+- **GitHub Pages:** Bei jedem Push, der `docs/` ändert, veröffentlicht die Action `.github/workflows/pages.yml` den Ordner
+  (einmalig: *Settings › Pages › Source: GitHub Actions*).
+- **Plesk / eigener Webserver:** Inhalt von `docs/` hochladen – oder das ZIP `webversion-plesk` aus dem letzten Action-Lauf nehmen.
+
+## Ändern und neu bauen
+
+Die Quellen (`kurs.yaml`, `module/`, `seiten/` …) werden mit dem [Lernpfad-Baukasten](https://github.com/dclausen01/Lernpfad-baukasten)
+(nicht öffentlich) gebaut:
+
+```bash
+python3 lehrkraft/veroeffentlichen.py <pfad-zum-baukasten>   # baut und aktualisiert docs/
+```
+
+Danach `docs/` mit committen. Lehrkräfte-Seite und Musterlösung kommen nicht nach `docs/`.
 
 ## Abgaben
 

@@ -1,11 +1,12 @@
-# Baut die Web-Version mit dem Lernpfad-Baukasten und veröffentlicht sie auf GitHub Pages.
-# Zusätzlich entsteht ein ZIP („webversion-plesk“) zum Hochladen auf den eigenen Webserver.
-# Lehrkräfte-Seite und Musterlösung werden für die öffentliche Version entfernt.
+# Veröffentlicht die fertig gebaute Web-Version aus docs/ auf GitHub Pages.
+# docs/ entsteht lokal mit:  python3 lehrkraft/veroeffentlichen.py <pfad-zum-baukasten>
+# Das ZIP „webversion-plesk“ (unter dem jeweiligen Lauf) kann direkt auf einen eigenen Webserver.
 name: Web-Version veröffentlichen
 
 on:
   push:
     branches: [main]
+    paths: ["docs/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -18,39 +19,19 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  bauen:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
-        with:
-          repository: dclausen01/Lernpfad-baukasten
-          ref: ${{ vars.BAUKASTEN_REF || 'main' }}
-          # Öffentlicher Baukasten: kein Schlüssel nötig. Privater Baukasten: Secret BAUKASTEN_TOKEN anlegen
-          # (Fine-grained Token, nur Repository Lernpfad-baukasten, Berechtigung „Contents: Read-only“).
-          token: ${{ secrets.BAUKASTEN_TOKEN || github.token }}
-          path: _baukasten
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install pyyaml markdown-it-py mdit-py-plugins
-      - run: python _baukasten/skripte/bauen.py .
-      - name: Unterlagen für Lehrkräfte entfernen
-        run: rm -f ausgabe/web/lehrkraefte.html ausgabe/web/material/musterloesung-basistext.docx
-      - uses: actions/upload-artifact@v4
-        with:
-          name: webversion-plesk
-          path: ausgabe/web
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ausgabe/web
-
   veroeffentlichen:
-    needs: bauen
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: webversion-plesk
+          path: docs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
       - id: deployment
         uses: actions/deploy-pages@v4

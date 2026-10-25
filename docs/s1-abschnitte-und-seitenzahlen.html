@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abschnitte und Seitenzahlen – Textverarbeitung für Haus- und Methodikarbeit</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/kurs.css">
+<script src="assets/js/kurs.js"></script>
+<script src="assets/js/medien.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/werkzeuge/gemeinsam.js" defer></script>
+<script src="assets/js/werkzeuge/docx.js" defer></script>
+</head>
+<body data-module="s1">
+<header id="topbar"></header>
+<div class="layout">
+<nav id="sidebar" aria-label="Lernpfad"></nav>
+<main>
+<div class="box goals"><div class="box-title">🎯 Das kannst du nach diesem Modul</div><ul><li>Seitenumbruch und Abschnittswechsel (bzw. Seitenvorlagenwechsel) unterscheiden,</li><li>Seitenzahlen so einrichten, dass Deckblatt und Inhaltsverzeichnis keine Zahl tragen,</li><li>die Zählung auf der ersten Textseite mit „1“ beginnen lassen.</li></ul></div><h2>1. Das Ziel</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Seite</th>
+<th>Inhalt</th>
+<th>Seitenzahl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Deckblatt</td>
+<td>keine</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Inhaltsverzeichnis</td>
+<td>keine</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Einleitung</td>
+<td><strong>1</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>…</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p>Seitenzahlen stehen in der <strong>Fußzeile</strong>. Damit vorne keine und hinten eine Zahl steht, brauchen die Seiten <strong>verschiedene Fußzeilen</strong>. Wie das geht, unterscheidet sich zwischen den Programmen stark.</p>
+<h2>2. Platz für Deckblatt und Inhaltsverzeichnis</h2>
+<div class="schritte"><ol class="steps">
+<li>Cursor ganz an den Anfang des Dokuments: <kbd>Strg</kbd>+<kbd>Pos1</kbd>.</li>
+<li>Schreib <code>DECKBLATT</code>, drück <kbd>Strg</kbd>+<kbd>Enter</kbd> (Seitenumbruch), schreib <code>INHALTSVERZEICHNIS</code>.</li>
+<li>Die richtigen Inhalte kommen im nächsten Modul.</li>
+</ol>
+</div><h2>3. Seitenzahlen einrichten</h2>
+<div class="both-grid"><div class="box how word"><span class="app-label">Word / OnlyOffice</span><p><strong>Word arbeitet mit Abschnitten.</strong> Fußzeilen gehören zu Abschnitten. Du teilst das Dokument also in zwei Abschnitte: vorne (Deckblatt + Verzeichnis) und Textteil.</p>
+<div class="schritte"><ol class="steps">
+<li>Cursor <strong>hinter</strong> <code>INHALTSVERZEICHNIS</code>. <span class="path">Layout › Umbrüche › Abschnittsumbrüche: Nächste Seite</span>. Mit Formatierungszeichen siehst du jetzt „Abschnittswechsel (Nächste Seite)“.</li>
+<li>Doppelklick in den unteren Rand der <strong>ersten Textseite</strong> (Einleitung). Die Registerkarte <strong>Kopf- und Fußzeile</strong> erscheint.</li>
+<li>Klicke auf <strong>„Mit vorheriger verknüpfen“</strong>, damit es ausgeschaltet ist. Der graue Hinweis „Wie vorherige“ verschwindet.</li>
+<li><span class="path">Kopf- und Fußzeile › Seitenzahl › Seitenende</span> › z. B. „Einfache Zahl 3“ (rechts).</li>
+<li><span class="path">Seitenzahl › Seitenzahlen formatieren…</span> › <strong>Beginnen bei: 1</strong> › OK.</li>
+<li>Scroll zur Fußzeile von Seite 1: Steht dort eine Zahl, markiere und lösche sie.</li>
+<li>Doppelklick in den Text (oder <kbd>Esc</kbd>) beendet die Fußzeilen-Bearbeitung.</li>
+</ol>
+</div><div class="box warn"><div class="box-title">Die Reihenfolge zählt</div><p>Erst <strong>entkoppeln</strong> (Schritt 3), dann vorne löschen (Schritt 6). Verschwindet beim Löschen auch die Zahl hinten, war die Verknüpfung noch an: <kbd>Strg</kbd>+<kbd>Z</kbd> und zurück zu Schritt 3.</p>
+</div><p><strong>OnlyOffice:</strong> Abschnittsumbruch über <span class="path">Layout › Umbrüche › Abschnittsumbruch › Nächste Seite</span>. In der Fußzeile des Textteils das Häkchen <strong>„Mit vorheriger verknüpfen“</strong> entfernen. Startwert: <span class="path">Einfügen › Seitenzahl › Seitennummerierung</span> › „Beginnen bei“ 1.</p>
+</div><div class="box how libre"><span class="app-label">LibreOffice</span><p><strong>LibreOffice arbeitet mit Seitenvorlagen.</strong> Die Fußzeile gehört zur Seitenvorlage. Deckblatt und Verzeichnis bekommen die Vorlage <strong>„Erste Seite“</strong> (ohne Fußzeile), der Textteil die Vorlage <strong>„Standard“</strong> (mit Fußzeile). Ein „Entkoppeln“ wie in Word gibt es nicht.</p>
+<div class="schritte"><ol class="steps">
+<li>Cursor auf die erste Textseite. <span class="path">Einfügen › Kopf- und Fußzeile › Fußzeile › Standard</span>.</li>
+<li>In die Fußzeile klicken: <span class="path">Einfügen › Feldbefehl › Seitennummer</span>.</li>
+<li>Cursor auf <strong>Seite 1</strong>. <kbd>F11</kbd> öffnet die Formatvorlagen. Oben auf das Symbol <strong>Seitenvorlagen</strong> klicken, dann <strong>Doppelklick auf „Erste Seite“</strong>. Dasselbe für <strong>Seite 2</strong> (Cursor auf Seite 2, Doppelklick auf „Erste Seite“).</li>
+<li>Cursor an den Anfang der Einleitung. <span class="path">Format › Absatz… › Textfluss</span> › Bereich „Umbrüche“: <strong>Einfügen</strong> ✔, <strong>Mit Seitenvorlage</strong> ✔ „Standard“, <strong>Seitennummer</strong> ✔ <strong>1</strong>. OK.</li>
+<li>Kontrolle in der Statusleiste: Seite 1 und 2 zeigen „Erste Seite“, ab Seite 3 steht „Standard“.</li>
+</ol>
+</div><div class="box warn"><div class="box-title">Ränder mitnehmen</div><p>Die Seitenränder gehören zur Seitenvorlage. Stell bei „Erste Seite“ dieselben Ränder ein wie bei „Standard“ (<span class="path">Format › Seitenvorlage…</span> › Register Seite).</p>
+</div></div></div><div class="box task basis"><div class="task-head"><span class="lvl basis">Basis</span><h3>Seitenzahlen ab Seite 3</h3><span class="lvl time">25 min</span></div><p>Richte in deiner Übungsdatei die Seitenzahlen wie in der Tabelle oben ein. Zoom danach heraus, sodass du mehrere Seiten siehst, und kontrolliere.</p>
+<div class="checkliste"><div class="check-title">Selbstcheck</div><ul class="check">
+<li>Seite 1 und 2: keine Seitenzahl</li>
+<li>Seite 3 (Einleitung): Seitenzahl <strong>1</strong>, danach fortlaufend</li>
+<li>Es gibt keine überzählige leere Seite</li>
+<li><span class="word">Zwischen Seite 2 und 3 steht ein Abschnittswechsel (Nächste Seite)</span><span class="libre">Seite 1 und 2 haben die Seitenvorlage „Erste Seite“</span></li>
+</ul>
+</div></div><div class="box lp-werkzeug" data-werkzeug="docx" data-titel="Dokument-Prüfer" data-config="{&quot;hinweis&quot;: &quot;Prüft jetzt auch Abschnitte und Seitenzahlen. LibreOffice: erst als .docx speichern.&quot;, &quot;pruefe&quot;: [&quot;raender&quot;, &quot;standard&quot;, &quot;silbentrennung&quot;, &quot;leerzeilen&quot;, &quot;ueberschriften&quot;, &quot;gliederung&quot;, &quot;abschnitte&quot;, &quot;seitenzahlen&quot;]}"><noscript>Dieses Werkzeug braucht JavaScript.</noscript></div>
+<div class="box task plus"><div class="task-head"><span class="lvl plus">Plus</span><h3>Römische Zahlen vorne?</h3><span class="lvl time">10 min</span></div><p>Manche Hochschulen wollen das Inhaltsverzeichnis mit römischen Zahlen (I, II …). Finde heraus, wie du für den vorderen Teil das Zahlenformat „I, II, III“ einstellst, <strong>ohne</strong> dass sich die Zählung im Textteil ändert. (Für die FSP brauchst du das nicht – vorne steht keine Zahl.)</p>
+<details><summary>Lösung</summary><p>Word: Fußzeile des <strong>ersten</strong> Abschnitts öffnen, Seitenzahl einfügen, <span class="path">Seitenzahl › Seitenzahlen formatieren…</span> › Zahlenformat „I, II, III“. Weil der Textteil entkoppelt ist, bleibt er arabisch. LibreOffice: der Vorlage „Erste Seite“ eine Fußzeile geben, Seitennummer-Feld einfügen, Doppelklick auf das Feld › Format „I, II, III“.</p>
+</details></div><div class="box warn"><div class="box-title">Leere Seite zu viel?</div><p>Formatierungszeichen an! Meist steht ein Seitenumbruch <strong>und</strong> ein <span class="word">Abschnittswechsel</span><span class="libre">Umbruch mit Seitenvorlage</span> direkt hintereinander. Lösch den einfachen Seitenumbruch.</p>
+</div><div class="box quiz"><div class="box-title">🧠 Kurz-Check</div><div class="qa" data-right="3"><p class="q">Wo soll laut Richtlinien die Seitenzahl „1“ stehen?</p><ol><li>Auf dem Deckblatt</li><li>Auf dem Inhaltsverzeichnis</li><li>Auf der ersten Seite des Fließtextes</li></ol><p class="fb" data-ok="Richtig – Deckblatt und Inhaltsverzeichnis bleiben ohne Zahl." data-no="Die Richtlinien sagen: Seitenzahlen beginnend mit „1“ auf der Fließtext-Seite."></p></div><div class="qa word" data-right="1"><p class="q">Word: Warum reicht ein normaler Seitenumbruch (Strg+Enter) vor dem Text nicht?</p><ol><li>Weil Fußzeilen zu Abschnitten gehören – ohne Abschnittswechsel gibt es nur eine Fußzeile für alles</li><li>Weil Seitenumbrüche beim Drucken verschwinden</li><li>Weil Word dann keine Seitenzahlen kann</li></ol><p class="fb" data-ok="Genau. Erst der Abschnittswechsel erlaubt eine eigene Fußzeile für den Textteil." data-no="Seitenzahlen stehen in der Fußzeile, und Fußzeilen gehören zu Abschnitten. Ohne Abschnittswechsel gibt es nur eine Fußzeile."></p></div><div class="qa word" data-right="2"><p class="q">Word: Du löschst die Seitenzahl auf dem Deckblatt – und sie verschwindet überall. Was hast du vergessen?</p><ol><li>Das Dokument zu speichern</li><li>„Mit vorheriger verknüpfen“ im Textteil auszuschalten</li><li>Die Silbentrennung</li></ol><p class="fb" data-ok="Richtig – erst entkoppeln, dann löschen." data-no="Solange die Fußzeile des Textteils mit der vorherigen verknüpft ist, ist sie nur eine Kopie davon."></p></div><div class="qa libre" data-right="2"><p class="q">LibreOffice: Wie bekommen Deckblatt und Inhaltsverzeichnis keine Seitenzahl?</p><ol><li>Ich lösche die Zahl auf beiden Seiten von Hand</li><li>Sie bekommen die Seitenvorlage „Erste Seite“ (ohne Fußzeile)</li><li>Ich mache die Zahl weiß</li></ol><p class="fb" data-ok="Genau – die Fußzeile gehört zur Seitenvorlage." data-no="In LibreOffice gehört die Fußzeile zur Seitenvorlage. Seiten ohne Zahl bekommen eine Vorlage ohne Fußzeile."></p></div></div>
+</main>
+</div>
+<footer class="site">BBZ Rendsburg-Eckernförde · Fachschule für Sozialpädagogik · Grundlage – Richtlinien für schriftliche Ausarbeitungen, Stand 21.11.2025</footer>
+</body>
+</html>

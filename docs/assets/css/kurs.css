@@ -1,0 +1,28 @@
+/* Erzeugt von bauen.py: Farben der Stufen und Varianten dieses Kurses. */
+:root {
+  --lv-einrichten: var(--lv-1); --lv-einrichten-soft: var(--lv-1-soft);
+  --lv-strukturieren: var(--lv-2); --lv-strukturieren-soft: var(--lv-2-soft);
+  --lv-recherchieren: var(--lv-3); --lv-recherchieren-soft: var(--lv-3-soft);
+  --lv-belegen: var(--lv-4); --lv-belegen-soft: var(--lv-4-soft);
+  --lv-gruppenprojekt: var(--lv-5); --lv-gruppenprojekt-soft: var(--lv-5-soft);
+}
+.badge.lv-einrichten { background: var(--lv-einrichten-soft); color: var(--deep); box-shadow: inset 3px 0 0 var(--lv-einrichten); }
+.level-card.einrichten { border-top-color: var(--lv-einrichten); }
+.badge.lv-strukturieren { background: var(--lv-strukturieren-soft); color: var(--deep); box-shadow: inset 3px 0 0 var(--lv-strukturieren); }
+.level-card.strukturieren { border-top-color: var(--lv-strukturieren); }
+.badge.lv-recherchieren { background: var(--lv-recherchieren-soft); color: var(--deep); box-shadow: inset 3px 0 0 var(--lv-recherchieren); }
+.level-card.recherchieren { border-top-color: var(--lv-recherchieren); }
+.badge.lv-belegen { background: var(--lv-belegen-soft); color: var(--deep); box-shadow: inset 3px 0 0 var(--lv-belegen); }
+.level-card.belegen { border-top-color: var(--lv-belegen); }
+.badge.lv-gruppenprojekt { background: var(--lv-gruppenprojekt-soft); color: var(--deep); box-shadow: inset 3px 0 0 var(--lv-gruppenprojekt); }
+.level-card.gruppenprojekt { border-top-color: var(--lv-gruppenprojekt); }
+.how.word { border-top-color: var(--v-1); }
+.how.word .app-label { background: var(--v-1); }
+.ribbon.word .rb-title, .sidepanel.word .sp-head, .media-item.word .ico { background: var(--v-1); }
+span.word { font-weight: 600; }
+html[data-app="word"] .libre:not(.keep) { display: none !important; }
+.how.libre { border-top-color: var(--v-2); }
+.how.libre .app-label { background: var(--v-2); }
+.ribbon.libre .rb-title, .sidepanel.libre .sp-head, .media-item.libre .ico { background: var(--v-2); }
+span.libre { font-weight: 600; }
+html[data-app="libre"] .word:not(.keep) { display: none !important; }
