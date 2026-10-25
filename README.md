@@ -2,7 +2,7 @@
 
 Interaktiver Lernpfad für die Fachschule für Sozialpädagogik am BBZ Rendsburg-Eckernförde: Schriftliche Arbeiten mit
 **Word, OnlyOffice und LibreOffice** nach den *Richtlinien für schriftliche Ausarbeitungen* (Stand 21.11.2025) gestalten.
-Gebaut mit dem [Lernpfad-Baukasten](https://github.com/dclausen01/Lernpfad-baukasten).
+Erstellt mit dem Lernpfad-Baukasten des BBZ; die nötigen Bau-Skripte liegen in `baukasten/`.
 
 **Umfang:** 5 Stufen, 12 Module, ca. 12 Unterrichtsstunden – Einrichten · Strukturieren · Recherchieren · Belegen & Abschließen ·
 Gruppenprojekt (Gruppenabgabe, 20-Punkte-Raster).
@@ -20,27 +20,22 @@ Dateinamen-Prüfer, Gliederungs-Prüfer, Quellen-Check, Angaben-Detektiv, Zitat-
 | `material/` | Basistext, Rohtext fürs Gruppenprojekt, Musterlösung |
 | `lehrkraft/` | Skripte, die Rohtext und Musterlösung erzeugen |
 | `quellen.yaml`, `medien.yaml` | geprüfte Quellen und Links |
-| `docs/` | veröffentlichte Web-Version (erzeugt – nicht von Hand ändern) |
+| `baukasten/` | Bau-Skripte, Vorlage und Werkzeuge (Dokument-Prüfer & Co.) |
 | `ausgabe/` | Arbeitsordner beim Bauen (nicht im Repository) |
 
-## Veröffentlichen
+## Bauen und veröffentlichen
 
-Die fertige Web-Version liegt in **`docs/`** – das Repository braucht zum Ansehen und Veröffentlichen nichts weiter.
-
-- **GitHub Pages:** Bei jedem Push, der `docs/` ändert, veröffentlicht die Action `.github/workflows/pages.yml` den Ordner
-  (einmalig: *Settings › Pages › Source: GitHub Actions*).
-- **Plesk / eigener Webserver:** Inhalt von `docs/` hochladen – oder das ZIP `webversion-plesk` aus dem letzten Action-Lauf nehmen.
-
-## Ändern und neu bauen
-
-Die Quellen (`kurs.yaml`, `module/`, `seiten/` …) werden mit dem [Lernpfad-Baukasten](https://github.com/dclausen01/Lernpfad-baukasten)
-(nicht öffentlich) gebaut:
+Alles Nötige liegt in diesem Repository – die Bau-Skripte samt Werkzeugen stecken in `baukasten/` (siehe dort).
 
 ```bash
-python3 lehrkraft/veroeffentlichen.py <pfad-zum-baukasten>   # baut und aktualisiert docs/
+python3 -m pip install pyyaml markdown-it-py mdit-py-plugins
+python3 baukasten/skripte/bauen.py .          # Web-Version → ausgabe/web/
 ```
 
-Danach `docs/` mit committen. Lehrkräfte-Seite und Musterlösung kommen nicht nach `docs/`.
+- **GitHub Pages:** Bei jedem Push auf `main` baut die Action `.github/workflows/pages.yml` die Web-Version und veröffentlicht sie
+  (einmalig: *Settings › Pages › Source: GitHub Actions*). Lehrkräfte-Seite und Musterlösung werden dabei weggelassen.
+- **Plesk / eigener Webserver:** Das ZIP `webversion-plesk` aus dem letzten Action-Lauf herunterladen und den Inhalt hochladen
+  (oder lokal bauen und `ausgabe/web/` hochladen).
 
 ## Abgaben
 

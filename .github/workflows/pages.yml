@@ -1,12 +1,11 @@
-# Veröffentlicht die fertig gebaute Web-Version aus docs/ auf GitHub Pages.
-# docs/ entsteht lokal mit:  python3 lehrkraft/veroeffentlichen.py <pfad-zum-baukasten>
-# Das ZIP „webversion-plesk“ (unter dem jeweiligen Lauf) kann direkt auf einen eigenen Webserver.
+# Baut die Web-Version (Skripte in baukasten/) und veröffentlicht sie auf GitHub Pages.
+# Zusätzlich entsteht das ZIP „webversion-plesk“ zum Hochladen auf einen eigenen Webserver.
+# Lehrkräfte-Seite und Musterlösung werden für die öffentliche Version entfernt.
 name: Web-Version veröffentlichen
 
 on:
   push:
     branches: [main]
-    paths: ["docs/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -26,12 +25,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml markdown-it-py mdit-py-plugins
+      - run: python baukasten/skripte/bauen.py .
+      - name: Unterlagen für Lehrkräfte entfernen
+        run: rm -f ausgabe/web/lehrkraefte.html ausgabe/web/material/musterloesung-basistext.docx
       - uses: actions/upload-artifact@v4
         with:
           name: webversion-plesk
-          path: docs
+          path: ausgabe/web
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: docs
+          path: ausgabe/web
       - id: deployment
         uses: actions/deploy-pages@v4
